@@ -345,7 +345,9 @@ main{
     .play-games-container{
         flex-direction: column-reverse;
     }
-
+    .play-games{
+        padding-bottom: 0px;
+    }
 
     .play-games-images{
         width: 100%;
@@ -369,7 +371,25 @@ main{
     }
     /* End Play Games Style */
     /* Start Our Game Style */
-
+    .our-game {
+        margin-top: -90px;
+    }
+    .our-game-container {
+        width:100%;
+        gap: 10px;
+    }
+    .our-game-list {
+        padding-right: 5px;
+    }
+    .our-game-list img {
+        width: 25px;
+        height: 25px;
+    }
+    .our-game-list p {
+        padding-left: 2px;
+        font-size: 0.7rem;
+        text-wrap: nowrap;
+    }
     /* End Our Game Style */
 
 
