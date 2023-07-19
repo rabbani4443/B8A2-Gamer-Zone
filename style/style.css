@@ -89,16 +89,17 @@ header{
     box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.1);
     background-image: url("../asset/images/Group\ 14.png");
     background-position: left bottom;
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     text-align: start;
 }
 .banner-container{
+    width: 75%;
+    height: 90vh;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    margin: auto;
 }
 .banner-description h2{
     color: var(--text-title);
@@ -136,7 +137,7 @@ header{
 .banner-btn{
     background-color: #4EC5F7;;
 }
-/* Start Banner Style */
+/* End Banner Style */
 /* End header section */
 /* Start Main Style */
 main{
@@ -144,7 +145,7 @@ main{
     margin: auto;
     padding-bottom: 300px;
 }
-/* End Main Style */
+
 /* Start Online Games Style */
 .online-games-description{
     text-align: center;
@@ -171,7 +172,7 @@ main{
 .online-games-box-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 15px;
+    gap: 20px;
 }
 .online-games-box{
     width: 100%;
@@ -181,12 +182,13 @@ main{
 }
 .online-games-box P{
     color: var(--secondary-color);
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
+    padding-top: 10px;
 }
-
 /* End Online Games Style */
+/* End Main Style */
 
 /* Responsive Design */
 /* Small devices (landscape phones, 576px and down) */
@@ -196,20 +198,35 @@ main{
     /* Start NavBar style */
     .nav-container{
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
     }
     .nav-item{
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
     }
     /* End NavBar style */
     /* Start Banner Style */
+    .banner-background{
+        background: #FFF;
+        box-shadow: none;
+    }
     .banner-container{
         flex-direction: column-reverse;
+        height: 100%;
    
+    }
+    .banner-description{
+        background-image: url("../asset/images/Group\ 14.png");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 35px 0px 35px 20px ;
     }
     .banner-description >h2{
         font-size: 2.8rem;
+    }
+    .banner-list{
+        font-size:1.1rem ;
     }
     .banner-images{
         width: 100%;
@@ -221,7 +238,9 @@ main{
     /* End header section */
     /* Start Main Style */
     /* Start Online Games Style */
-    
+    .online-games-box-container{
+        grid-template-columns: repeat(1,1fr);
+    }
     /* End Online Games Style */
     /* End Main Style */
 }
