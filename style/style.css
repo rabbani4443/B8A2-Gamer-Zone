@@ -36,7 +36,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 .nav-logo{
@@ -83,7 +83,7 @@ a{
 /* End NavBar style */
 /* Start Banner Style */
 header{
-    padding-bottom: 300px;
+    padding-bottom: 70px;
 }
 .banner-background{
     box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -97,7 +97,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 .banner-description h2{
@@ -138,6 +138,55 @@ header{
 }
 /* Start Banner Style */
 /* End header section */
+/* Start Main Style */
+main{
+    width:75%;
+    margin: auto;
+    padding-bottom: 300px;
+}
+/* End Main Style */
+/* Start Online Games Style */
+.online-games-description{
+    text-align: center;
+    padding-bottom: 35px;
+}
+.online-games-title{
+    color: var(--text-title);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.online-games-title span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.online-games-sub-title{
+    color: var(--secondary-color);
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.online-games-box-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+.online-games-box{
+    width: 100%;
+}
+.online-games-box> img{
+    max-width: 100%;
+}
+.online-games-box P{
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* End Online Games Style */
 
 /* Responsive Design */
 /* Small devices (landscape phones, 576px and down) */
@@ -170,6 +219,11 @@ header{
     }
     /* Start Banner Style */
     /* End header section */
+    /* Start Main Style */
+    /* Start Online Games Style */
+    
+    /* End Online Games Style */
+    /* End Main Style */
 }
 
 /* Medium devices (tablets, 768px and down) */
@@ -203,13 +257,14 @@ header{
     }
     /* End NavBar style */
     /* Start Banner Style */
-
     /* Start Banner Style */
     /* End header section */
+
+    /* Start Main Style */
+    /* Start Online Games Style */
+
+    /* End Online Games Style */
+    /* End Main Style */
+
 }
 
-/* Large devices (desktops, 992px and down) */
-@media screen and (min-width: 768.1px) and (max-width: 992px) {
-
-
-}
