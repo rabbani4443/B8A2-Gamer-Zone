@@ -644,6 +644,7 @@ i.fa-brands.fa-apple {
     /* Start NavBar style */
     .nav-container{
         gap: 120px;
+        width: 85%;
     }
     .nav-logo{
         width: 60px;
@@ -658,24 +659,97 @@ i.fa-brands.fa-apple {
     .nav-list{
         padding: 0px 8px;
     }
+    .nav-list a{
+        font-size: 1rem;
+        font-weight: 600;
+    }
     .nav-list button{
-        padding: 7px 15px;
+        padding: 7px 10px;
     }
     .nav-list a>i{
         padding: 4px;
     }
     /* End NavBar style */
     /* Start Banner Style */
+    .banner-container {
+        width: 85%;
+        height: 100%;
+        padding: 50px 0px;
+    }
+    .banner-description h2{
+        font-size: 2.5rem;
+    }
+    .banner-description h1 {
+        font-size: 3.8rem;
+    }
+    .banner-list{
+        font-size: 1rem;
+    }
+    .primary-btn{
+        font-weight: 400;
+    }
     /* Start Banner Style */
     /* End header section */
-
+    main{
+        width: 85%;
+    }
     /* Start Main Style */
     /* Start Online Games Style */
     .online-games-box-container{
         grid-template-columns: repeat(2,1fr);
     }
+    .online-games-title {
+        font-size: 2.5rem;
+    }
+    .online-games-sub-title{
+        font-size: 1rem;
+    }
     /* End Online Games Style */
+    /* Start Play Games Style */
+    .play-games {
+        padding-bottom: 50px;
+    }
+    .play-games-container {
+        gap: 50px;
+    }
+    .play-games-img3 {
+        width: 120px;
+        position: relative;
+        top: 200px;
+        right: 80px;
+    }
+    .play-games-title{
+        font-size: 2rem;
+        line-height:45px ;
+    }
+    .play-games-sub-title {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    /* End Play Games Style */
+    /* Start Our Games Style */
+    .our-game-container{
+        width: 85%;
+    }
+    /* End Our Games Style */
     /* End Main Style */
+    /* Start footer style */
+    .footer-logo h2{
+        font-size: 2.5rem;
+    }
+    .footer-container{
+        width: 85%;
+        margin: auto;
+    }
+    .footer-list a {
+        padding: 0px 10px;
+    }
+    .footer-list2 a {
+        padding: 0px 10px;
+    }
+
+    /* End footer style */
+
 
 }
-
