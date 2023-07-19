@@ -1,0 +1,117 @@
+/* Shared common Style */
+/* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --primary-color:#FF42A5;
+    --secondary-color:#534C64;
+    --text-title:#0B0223;
+}
+/* End common Style */
+
+/* Start header section */
+/* Start NavBar style */
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo h2{
+    color: var(--text-title);
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.nav-logo h2>span{
+    color: var(--primary-color);
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    list-style: none;
+    padding-right: 30px;
+}
+.nav-list a{
+    color:#3C354F;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.nav-list button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(11, 2, 35, 0.10);
+}
+.nav-list a>i{
+    padding-left: 10px;
+}
+.nav-youtube{
+    color: #F61C0D;
+}
+.nav-tiktok{
+    color: black;
+}
+/* End NavBar style */
+
+
+/* End header section */
+
+/* Responsive Design */
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    .nav-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .nav-item{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (min-width: 576.1px) and (max-width: 768px) {
+    .nav-container{
+        gap: 120px;
+    }
+    .nav-logo{
+        width: 60px;
+    }
+    .nav-logo img{
+        width: 100%;
+    }
+    .nav-logo h2{
+        font-size: 2rem;
+        padding-left: 5px;
+    }
+    .nav-list{
+        padding: 0px 8px;
+    }
+    .nav-list button{
+        padding: 7px 15px;
+    }
+    .nav-list a>i{
+        padding: 4px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and down) */
+@media screen and (min-width: 768.1px) and (max-width: 992px) {
+
+
+}
