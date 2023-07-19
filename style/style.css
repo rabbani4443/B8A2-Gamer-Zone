@@ -188,6 +188,62 @@ main{
     padding-top: 10px;
 }
 /* End Online Games Style */
+/* Start Play Games Style */
+.play-games{
+    padding: 100px 0px;
+
+}
+.play-games-container{
+    display: flex;
+    gap: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-games-images{
+    display: flex;
+    width: 50%;
+}
+.play-games-img{
+    display: flex;
+    width: 100%;
+}
+.play-games-img1{
+    width: 100%;
+}
+
+.play-games-img3{
+    width: 200px;
+    position: relative;
+    top: 280px;
+    right: 120px;
+}
+
+
+
+.play-games-description{
+    width: 50%;
+}
+.play-games-title{
+    color: var(--text-title);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.play-games-title span{
+    background: linear-gradient(108deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play-games-sub-title{
+    color: var(--secondary-color);
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 20px;
+}
+/* End Play Games Style */
 /* End Main Style */
 
 /* Responsive Design */
@@ -236,12 +292,40 @@ main{
     }
     /* Start Banner Style */
     /* End header section */
+
     /* Start Main Style */
     /* Start Online Games Style */
     .online-games-box-container{
         grid-template-columns: repeat(1,1fr);
     }
     /* End Online Games Style */
+    /* Start Play Games Style */
+    .play-games-container{
+        flex-direction: column-reverse;
+    }
+
+
+    .play-games-images{
+        width: 100%;
+    }
+    .play-games-img{
+        display: block;
+    }
+    .play-games-img1{
+        width: 95%;
+    }
+
+    .play-games-img3{
+        width: 100px;
+        top: -100px;
+        right: -212px;
+    }
+
+    .play-games-description{
+        width: 100%;
+        text-align: center;
+    }
+    /* End Play Games Style */
     /* End Main Style */
 }
 
@@ -281,7 +365,9 @@ main{
 
     /* Start Main Style */
     /* Start Online Games Style */
-
+    .online-games-box-container{
+        grid-template-columns: repeat(2,1fr);
+    }
     /* End Online Games Style */
     /* End Main Style */
 
