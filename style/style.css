@@ -29,6 +29,79 @@ a{
 }
 /* End common Style */
 
+
+
+
+
+
+
+
+
+
+  
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url('../asset/circle-play-solid.svg');
+    /* background-size: 50%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container:hover .play-button {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
 /* Start header section */
 /* Start NavBar style */
 .nav-container{
@@ -247,16 +320,17 @@ main{
 /* Start Our Game Style */
 .our-game{
     background-color: #FFF9FC;
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 .our-game-container{
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    row-gap: 70px;
 }
 .our-game-list{
     display: inline-flex;
@@ -456,11 +530,13 @@ i.fa-brands.fa-apple {
     /* End Play Games Style */
     /* Start Our Game Style */
     .our-game {
-        margin-top: -90px;
+        margin-top: -80px;
+        padding: 70px 0px;
     }
     .our-game-container {
         width:100%;
         gap: 10px;
+        row-gap: 25px;
     }
     .our-game-list {
         padding: 5px 0px;
