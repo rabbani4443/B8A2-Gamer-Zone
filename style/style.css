@@ -14,15 +14,30 @@ a{
     --secondary-color:#534C64;
     --text-title:#0B0223;
 }
+.primary-btn{
+    padding: 12px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 48px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
 /* End common Style */
 
 /* Start header section */
 /* Start NavBar style */
 .nav-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
+    width: 85%;
+    margin: auto;
 }
 .nav-logo{
     display: flex;
@@ -66,13 +81,70 @@ a{
     color: black;
 }
 /* End NavBar style */
-
-
+/* Start Banner Style */
+header{
+    padding-bottom: 300px;
+}
+.banner-background{
+    box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.1);
+    background-image: url("../asset/images/Group\ 14.png");
+    background-position: left bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-align: start;
+}
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+.banner-description h2{
+    color: var(--text-title);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-description h1{
+    font-size: 5.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-list{
+    list-style: none;
+    color:var(--secondary-color) ;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.banner-list i{
+    color:var(--primary-color) ;
+    font-size: 1rem;
+    padding-right: 5px;
+}
+.banner-images{
+    width: 40%;
+}
+.banner-images >img{
+    max-width: 100%;
+}
+.banner-btn{
+    background-color: #4EC5F7;;
+}
+/* Start Banner Style */
 /* End header section */
 
 /* Responsive Design */
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 576px) {
+    
+    /* Start header section */
+    /* Start NavBar style */
     .nav-container{
         flex-direction: column;
         gap: 50px;
@@ -81,10 +153,32 @@ a{
         flex-direction: column;
         gap: 50px;
     }
+    /* End NavBar style */
+    /* Start Banner Style */
+    .banner-container{
+        flex-direction: column-reverse;
+   
+    }
+    .banner-description >h2{
+        font-size: 2.8rem;
+    }
+    .banner-images{
+        width: 100%;
+    }
+    .banner-images >img{
+        width: 100%;
+    }
+    /* Start Banner Style */
+    /* End header section */
 }
 
 /* Medium devices (tablets, 768px and down) */
 @media screen and (min-width: 576.1px) and (max-width: 768px) {
+    /* Start header section */
+    header{
+        width: 100%;
+    }
+    /* Start NavBar style */
     .nav-container{
         gap: 120px;
     }
@@ -107,7 +201,11 @@ a{
     .nav-list a>i{
         padding: 4px;
     }
+    /* End NavBar style */
+    /* Start Banner Style */
 
+    /* Start Banner Style */
+    /* End header section */
 }
 
 /* Large devices (desktops, 992px and down) */
