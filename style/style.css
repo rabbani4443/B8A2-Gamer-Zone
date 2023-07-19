@@ -28,33 +28,13 @@ a{
     text-transform: uppercase;
 }
 /* End common Style */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Start header section */
 /* Start NavBar style */
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+    padding: 15px 0px;
     width: 75%;
     margin: auto;
 }
@@ -457,16 +437,24 @@ i.fa-brands.fa-apple {
 
 
 
-
 /* Responsive Design */
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 576px) {
     
     /* Start header section */
+    header {
+        padding-bottom: 50px;
+    }
     /* Start NavBar style */
     .nav-container{
         flex-direction: column;
         gap: 30px;
+    }
+    .nav-logo img{
+        width: 60px;
+    }
+    .nav-logo h2{
+        font-size: 2rem;
     }
     .nav-item{
         flex-direction: column;
@@ -491,16 +479,24 @@ i.fa-brands.fa-apple {
         padding: 35px 0px 35px 20px ;
     }
     .banner-description >h2{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+    }
+    .banner-description h1{
+        font-size: 3.8rem;
     }
     .banner-list{
-        font-size:1.1rem ;
+        font-size:1rem ;
     }
     .banner-images{
         width: 100%;
     }
     .banner-images >img{
         width: 100%;
+    }
+    .primary-btn {
+        padding: 10px 15px;
+        font-weight: 400;
+        margin-top: 35px;
     }
     /* Start Banner Style */
     /* End header section */
@@ -510,15 +506,24 @@ i.fa-brands.fa-apple {
     .online-games-box-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .online-games-title{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .online-games-sub-title{
+        font-size: 1rem;
+        line-height:25px;
+    }
     /* End Online Games Style */
     /* Start Play Games Style */
     .play-games-container{
         flex-direction: column-reverse;
+        gap: 50px;
     }
     .play-games{
         padding-bottom: 0px;
+        padding-top: 50px;
     }
-
     .play-games-images{
         width: 100%;
     }
@@ -531,19 +536,27 @@ i.fa-brands.fa-apple {
 
     .play-games-img3{
         width: 100px;
-        top: -100px;
-        right: -212px;
+        top: -72px;
+        right: -240px;
     }
 
     .play-games-description{
         width: 100%;
         text-align: center;
     }
+    .play-games-title{
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .play-games-sub-title{
+        font-size: 1rem;
+        line-height: 25px;
+    }
     /* End Play Games Style */
     /* Start Our Game Style */
     .our-game {
-        margin-top: -80px;
-        padding: 70px 0px;
+        margin-top: -100px;
+        padding: 50px 0px;
     }
     .our-game-container {
         width:100%;
@@ -596,7 +609,7 @@ i.fa-brands.fa-apple {
         padding: 50px 0px;
     }
     .footer-list a{
-        padding: 10px 0px;
+        padding: 6px 0px;
     }
     .footer-social-icon {
         display: inline-flex;
@@ -606,7 +619,7 @@ i.fa-brands.fa-apple {
         align-items: center;
     }
     .footer-social-icon a{
-        padding: 15px 25px;
+        padding: 6px 25px;
         color: #FFF;
         text-align: center;
         font-size: 1.7rem;
@@ -625,7 +638,7 @@ i.fa-brands.fa-apple {
         align-items: center;
     }
     .footer-list2 a{
-        padding: 10px 0px;
+        padding: 6px 0px;
     }
 
     .footer-copy p{
