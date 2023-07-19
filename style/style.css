@@ -143,7 +143,7 @@ header{
 main{
     width:75%;
     margin: auto;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
 
 /* Start Online Games Style */
@@ -244,6 +244,48 @@ main{
     padding-top: 20px;
 }
 /* End Play Games Style */
+/* Start Our Game Style */
+.our-game{
+    background-color: #FFF9FC;
+    /* background-color: aquamarine; */
+    padding: 50px 0px;
+}
+.our-game-container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.our-game-list{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #fff;
+    padding-right: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: var(--text-title);
+    cursor: pointer;
+}
+.our-game-list p{
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.our-game-list img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.our-game-container .our-game-list:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+/* End Our Game Style */
+
+
 /* End Main Style */
 
 /* Responsive Design */
@@ -326,6 +368,11 @@ main{
         text-align: center;
     }
     /* End Play Games Style */
+    /* Start Our Game Style */
+
+    /* End Our Game Style */
+
+
     /* End Main Style */
 }
 
